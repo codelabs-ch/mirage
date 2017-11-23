@@ -2019,7 +2019,7 @@ module Project = struct
                        package ~min:"0.2.0" "mirage-solo5" ] @ common
         | `Ukvm -> [ package ~min:"0.2.1" ~ocamlfind:[] "solo5-kernel-ukvm" ;
                      package ~min:"0.2.0" "mirage-solo5" ] @ common
-        | `Muen -> [ package ~min:"0.2.1" ~ocamlfind:[] "solo5-kernel-muen" ;
+        | `Muen -> [ package "solo5-kernel-muen" ;
                      package ~min:"0.2.0" "mirage-solo5" ] @ common
         | `Unix | `MacOSX -> [ package ~min:"3.0.0" "mirage-unix" ] @ common
 
